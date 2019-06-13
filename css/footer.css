@@ -1,0 +1,81 @@
+.footer {
+	width : 100%; height : 400px; background-color : #eaeaea; margin-top : 160px; padding : 0 10px; padding-top : 40px; box-sizing : border-box;
+}
+.footer .footer_inner {
+	width : 1200px; /*height : 380px;*/ margin : 0 auto;
+}
+.footer .footer_inner .sns {
+	margin-bottom : 40px;
+}
+.footer .footer_inner .sns li {
+	display : inline-block; margin-left : 20px; 
+}
+.footer .footer_inner .sns li:first-child {
+	margin-left : 0;
+}
+.footer .footer_inner .sns li a {
+	display : block; width : 50px; height : 50px;
+}
+.footer .footer_inner .sns li:first-child a {
+	background : url(../images/facebook.png); transition : background 0.3s;
+}
+.footer .footer_inner .sns li:first-child:hover a,
+.footer .footer_inner .sns li:first-child a:focus {
+	background : url(../images/facebookover.png); 
+}
+.footer .footer_inner .sns li:nth-child(2) a {
+	background : url(../images/youtube.png); transition : background 0.3s;
+}
+.footer .footer_inner .sns li:nth-child(2):hover a,
+.footer .footer_inner .sns li:nth-child(2) a:focus {
+	background : url(../images/youtubeover.png);
+}
+.footer .footer_inner .sns li:last-child a {
+	background : url(../images/insta.png); transition : background 0.3s;
+}
+.footer .footer_inner .sns li:last-child:hover a,
+.footer .footer_inner .sns li:last-child a:focus {
+	background : url(../images/instaover.png); 
+}
+.footer .footer_inner .infobox {
+	float : left; width : 785px;
+}
+.footer .footer_inner .infolink {
+	width : 600px; display : inline-block;
+}
+.footer .footer_inner .infolink a {
+	font-size : 13px; color : #565656; 
+}
+.footer .footer_inner .infolink a b {
+	font-weight : 400; color : #000;
+}
+.footer .footer_inner .infolink a::after {
+	content : ""; display : inline-block; width : 1px; height : 13px; background-color : #565656; margin : 0 5px; vertical-align : middle;
+}
+.footer .footer_inner .infolink span:last-child a::after {
+	display : none;
+}
+.footer .footer_inner .info {
+	display : inline-block;
+}
+.footer .footer_inner .info a {
+	display : block; width : 120px; height : 23px; border : 1px solid #565656; font-size : 13px; text-align : center; line-height : 23px;
+}
+.footer .footer_inner .address {
+	display : block; margin-top : 40px; width : 780px; font-size : 13px; color : #565656;
+}
+.footer .footer_inner .name {
+	display : block; margin-top : 5px; width : 780px; font-size : 13px; color : #565656;
+}
+.footer .footer_inner .copyright {
+	display : block; margin-top : 5px; width : 780px; font-size : 13px; color : #565656;
+}
+.footer .footer_inner .infoimg {
+	float : right; width : 410px; margin-top : 0px;
+}
+.footer .footer_inner .infoimg img[alt=graylogo] {
+	display : block;
+}
+.footer .footer_inner .infoimg img[alt=award] {
+	margin-top : 40px;
+}

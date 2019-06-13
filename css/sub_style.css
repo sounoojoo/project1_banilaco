@@ -1,0 +1,166 @@
+/* * { */
+	/* border : 1px solid #000; */
+/* } */
+
+.sub_title {
+	min-width : 1200px; height : 240px; position : relative;
+}
+.sub_title img {
+	display : block; margin : 0 auto;
+}
+.sub_title::before,
+.sub_title::after{
+	content : ""; display : block; position : absolute; z-index : -100; width : 50%; height : 240px;
+}
+.sub_title::before {
+	background-color : #e2c7cc; left : 0;
+}
+.sub_title::after {
+	background-color : #faa9b8; right : 0; top : 0;
+}
+.category_menu {
+	min-width : 1200px; height : 230px; padding : 35px 0; position: relative;
+}
+.category_menu::after {
+	content : ""; display : block; position : absolute; width : 100%; height : 1px; background-color :  #dadada; top : 231px;
+}
+.category_menu .category_inner {
+	width : 1200px; height : 160px; margin : 0 auto; padding : 0 10px;
+}
+.category_menu .category_inner ul {
+	text-align : center; font-size : 0;
+}
+.category_menu .category_inner ul li {
+	display : inline-block; margin-left : 17px;
+}
+.category_menu .category_inner ul li a {
+	display : block; width : 182px; height : 160px; font-size : 18px; color : #565656; padding-top : 125px; box-sizing : border-box; transition : all 0.3s;
+}
+.category_menu .category_inner ul li:first-child {
+	margin-left : 3px;
+}
+.category_menu .category_inner ul li .all {
+	background : url("../images/all_n_over.png");
+}
+.category_menu .category_inner ul li .all:hover,
+.category_menu .category_inner ul li .all:focus {
+	background : url("../images/all_over.png"); color : #000;
+}
+.category_menu .category_inner ul li .skincare {
+	background : url("../images/skincare_n_over.png"); 
+}
+.category_menu .category_inner ul li .skincare:hover,
+.category_menu .category_inner ul li .skincare:focus {
+	background : url("../images/skincare_over.png"); color : #000;
+}
+.category_menu .category_inner ul li .cleanser {
+	background : url("../images/cleansing_n_over.png"); 
+}
+.category_menu .category_inner ul li .cleanser:hover,
+.category_menu .category_inner ul li .cleanser:focus {
+	background : url("../images/cleansing_over.png"); color : #000;
+}
+.category_menu .category_inner ul li .bodycare {
+	background : url("../images/bodycare_n_over.png"); 
+}
+.category_menu .category_inner ul li .bodycare:hover,
+.category_menu .category_inner ul li .bodycare:focus {
+	background : url("../images/bodycare_over.png"); color : #000;
+}
+.category_menu .category_inner ul li .packmask {
+	background : url("../images/mask_n_over.png"); 
+}
+.category_menu .category_inner ul li .packmask:hover,
+.category_menu .category_inner ul li .packmask:focus {
+	background : url("../images/mask_over.png"); color : #000;
+}
+.category_menu .category_inner ul li .etc {
+	background : url("../images/etc_n_over.png"); 
+}
+.category_menu .category_inner ul li .etc:hover,
+.category_menu .category_inner ul li .etc:focus {
+	background : url("../images/etc_over.png"); color : #000;
+}
+
+.sub_product {
+	width : 1200px; margin : 0 auto; margin-top : 65px; padding : 0 10px; box-sizing : border-box;
+}
+.sub_product .prod_num {
+	width : 1200px; padding : 0 0 15px 10px; border-bottom : 3px solid #404040;
+}
+.sub_product .prod_btn {
+	float : right; margin-top : 15px;
+}
+.sub_product .prod_btn ul li {
+	display : inline-block; margin-left : 30px; 
+}
+.sub_product .prod_btn ul li a {
+	display : block; font-size : 15px; position : relative; color : #565656;
+}
+.sub_product .prod_btn ul li:first-child a {
+	color : #000; font-weight : 400;
+}
+.sub_product .prod_btn ul li a::after {
+	content : ""; display : block; position : absolute; width : 1px; height : 14px; background-color : #404040; right : -16px; top : 0;
+}
+.sub_product .prod_btn ul li:last-child a::after {
+	display : none;
+}
+.sub_product .product {
+	margin-top : 150px;
+}
+.sub_product .product li {
+	float : left; margin : 0 9px; margin-bottom : 100px;
+}	
+.sub_product .product li>a {
+	display : block; width : 219px; height : 240px; transition : all 0.3s;  position: relative;
+}
+.sub_product .product li:hover>a,
+.sub_product .product li>a:focus {
+	transform : translate(0,-10px); 
+}
+.sub_product .product li:hover dl dt a,
+.sub_product .product li dl dt a:focus {
+	text-decoration : underline;
+}
+.sub_product .product li>a::after {
+	content : ""; display : block; width : 80px; height : 35px; background : url(../images/cartandlike.png); position : absolute; bottom : -40px; left : 50%; margin-left : -40px; opacity : 0; transition : all 0.5s;
+}
+.sub_product .product li:hover>a::after,
+.sub_product .product li>a:focus::after {
+	opacity : 0.9; bottom : -30px;
+}
+.sub_product .product li:first-child {
+	margin-left : 0px;
+}
+.sub_product .product li dl {
+	margin-top : 78px; display : block; width : 219px;  
+}
+.sub_product .product li dl dt {
+	display : inline-block; height : 37px;
+}
+.sub_product .product li dl dt a {
+	color : #313131; 
+}
+.sub_product .product li dl dt a span {
+	color : #ff2d63;
+}
+.sub_product .product li dl dd {
+	margin-top : 37px; display: inline-block; margin-inline-start: 0px; width : 219px; text-align : right;
+}
+.sub_product .product li dl dd a {
+	color : #313131; font-size : 20px; font-weight : 600;
+}
+.sub_product .product li dl dd a span {
+	color : #999; font-size : 16px; font-weight : 400;
+}
+.sub_product .product li dl dd .off {
+	color : #999; text-decoration : line-through; font-size : 14px; margin-right : 5px;
+}
+.sub_product .product li dl dd .soldout {
+	display : block; width : 60px; height : 25px; background-color : #fda2cb; color : #fff; font-size : 12px; text-align : center; line-height : 25px; position : absolute; margin-left : 70px;
+}	
+.sub_product .product li:hover dl dd a,
+.sub_product .product li dl dd a:focus {
+	color : #ff2c63;
+}

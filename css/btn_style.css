@@ -1,0 +1,6 @@
+.btn_go{
+	display: block; position: fixed; top: -70px; left: 0; width: 100%; background-color: #eaeaea; z-index: 9999; text-align: center; line-height: 30px; color : #000;
+}
+.btn_go:focus{
+	top: 0;
+}

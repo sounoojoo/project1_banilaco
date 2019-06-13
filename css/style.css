@@ -1,0 +1,380 @@
+/* * { */
+	/* border : 1px solid #000; */
+/* } */
+
+.keyvisual {
+	min-width : 1200px; height : 640px; position : relative; overflow : hidden; 
+}
+.keyvisual .controller {
+	position : absolute; z-index : 50; bottom : 32px; left : 50%; margin-left : -153px;
+}
+
+.keyvisual .controller li {
+	display : inline-block;
+}
+.keyvisual .controller li a {
+	display : block; width : 15px; height : 15px; border-radius : 50%; background-color : #e5e5e5; opacity : 0.8; margin: 0 8px; 
+}
+.keyvisual .controller li.on a {
+	background-color : #fca2ca;
+}
+.keyvisual .controller li:hover a,
+.keyvisual .controller li a:focus {
+	background-color : #fca2ca;
+}
+.keyvisual .arrows li.prev {
+	position : absolute; z-index : 50; top : 50%; left : 10%;margin-top : -25px;
+}
+.keyvisual .arrows li.next {
+	position : absolute; z-index : 50; top : 50%; right : 10%; margin-top : -25px; 
+}
+.keyvisual .picture {
+	position : absolute; top : 0; left : -1000px; margin-left : 50%; width : 18000px; height : 640px; transition : left 0.3s;
+}
+.keyvisual .picture li {
+	float : left;
+}
+.bestseller {
+	width : 1200px; margin : 0 auto; margin-top : 55px; padding : 0 10px; box-sizing : border-box;
+}
+.bestseller .title {
+	font-weight : 700; font-size : 45px; position : relative; color : #313131; transition : color 0.5s;
+}
+.bestseller:hover .title{
+	color : #fca2ca;
+}
+.bestseller .title::after {
+	content : ""; display : block; width : 300px; height : 3px; background-color : #313131; position : absolute; left : -10px; top : 48px; transition : background-color 0.5s;
+}
+/* .bestseller:hover .title::after{ */
+	/* background-color : #fca2ca; */
+/* } */
+.bestseller .product {
+	margin-top : 75px;
+}
+.bestseller .product ul li {
+	float : left; margin-left : 21px;
+}
+.bestseller .product ul li>a {
+	display : block; width : 219px; height : 240px; transition : all 0.3s; 
+}
+.bestseller .product ul li:hover>a,
+.bestseller .product ul li>a:focus {
+	transform : translate(0,-10px); 
+}
+.bestseller .product ul li:hover dl dt a,
+.bestseller .product ul li dl dt a:focus {
+	text-decoration : underline;
+}
+.bestseller .product ul li:first-child {
+	margin-left : 0px;
+}
+.bestseller .product ul li dl {
+	margin-top : 78px; display : block; width : 219px;  
+}
+.bestseller .product ul li dl dt {
+	display : inline-block; height : 37px;
+}
+.bestseller .product ul li dl dt a {
+	color : #313131; 
+}
+.bestseller .product ul li dl dt a span {
+	color : #ff2d63;
+}
+.bestseller .product ul li dl dd {
+	margin-top : 37px; display: inline-block; margin-inline-start: 0px; width : 219px; text-align : right;
+}
+.bestseller .product ul li dl dd a {
+	color : #313131; font-size : 20px; font-weight : 600;
+}
+.bestseller .product ul li dl dd a span {
+	color : #999; font-size : 16px; font-weight : 400;
+}
+.bestseller .product ul li dl dd .off {
+	color : #999; text-decoration : line-through; font-size : 14px; margin-right : 5px;
+}
+.bestseller .product ul li:hover dl dd a,
+.bestseller .product ul li dl dd a:focus {
+	color : #ff2c63;
+}
+.bestseller .product ul li>a::after {
+	content : ""; display : block; width : 80px; height : 35px; background : url(../images/cartandlike.png); position : absolute; bottom : -40px; left : 50%; margin-left : -40px; opacity : 0; transition : all 0.5s;
+}
+.bestseller .product ul li:hover>a::after,
+.bestseller .product ul li>a:focus::after {
+	opacity : 0.9; bottom : -30px;
+}
+.zero123 {
+	margin-top : 93px; min-width : 1200px; height : 470px; position : relative;
+}
+.zero123::before {
+	content : ""; display : block; position : absolute; top : 0; left : 0; z-index : -1; width : 100%; height : 163px; background-color : #f7f4e8;
+}
+.zero123::after {
+	content : ""; display : block; position : absolute; top : 163px; left : 0; z-index : -1; width : 100%; height : 307px; background-color : #fcedf4;
+}
+.zero123 .zero_inner1 {
+	width : 1200px; height : 517px; margin : 0 auto; position : absolute; top : -47px; left : 50%; margin-left : -600px;
+}
+.zero123 .zero_inner1 img[alt=zero123logo] {
+	float : left;
+}
+.zero123 .zero_inner1 img[alt=zero_model] {
+	float : right; margin-top : 47px;
+}
+.zero123 .zero_inner1 img[alt=bgimg] {
+	display : block; margin-top : -300px; float : left; clear : both;
+}
+.zero123 .zero_inner2 {
+	width : 910px; height : 540px; position : absolute; top : 47px; left : 0; text-align : center; 
+}
+.zero123 .zero_inner2 .sub_title {
+	margin-top : 69px; color : #313131; font-size : 20px; font-weight : 400; position : relative;
+}
+.zero123 .zero_inner2 .sub_title::after {
+	content : ""; display : block; width : 408px; height : 16px; background-color : #fff; position : absolute; z-index : -1; top : 12px; left : 250px;
+}
+.zero123 .zero_inner2 img[alt=cleanitzero] {
+	margin-top : 28px; 
+}
+.zero123 .zero_inner2 .choice {
+	margin-top : 22px; color : #313131; font-size : 30px; font-weight : 400; 
+}
+.zero123 .zero_inner2 img[alt=arrow] {
+	margin-top : 22px; animation-duration: 1.5s; animation-name: down; animation-iteration-count : infinite;
+}
+@keyframes down {
+	from {
+		transform : translate(0, 0px);
+	}
+	50% {
+		transform : translate(0, 15px);
+	}
+	to {
+		ransform : translate(0, 0px);
+	}
+}
+.zero123 .zero_inner2 ul {
+	margin-top : 50px;
+}
+.zero123 .zero_inner2 ul li {
+	float : left; margin-left : 63px; text-indent : -9999px; 
+}
+.zero123 .zero_inner2 ul li:first-child {
+	margin-left : 0;
+}
+.zero123 .zero_inner2 ul li a {
+	display : block; width : 178px; height : 170px; transition : all 0.5s; overflow : hidden;
+}
+.zero123 .zero_inner2 ul li:nth-child(1) a{
+	background : url(../images/cleanitzero1.png);
+}
+.zero123 .zero_inner2 ul li:nth-child(1):hover a,
+.zero123 .zero_inner2 ul li:nth-child(1) a:focus{
+	background : url(../images/cleanitzero1over.png);
+	transform : translate(0,-5px);
+}
+.zero123 .zero_inner2 ul li:nth-child(2) a{
+	background : url(../images/cleanitzero2.png);
+}
+.zero123 .zero_inner2 ul li:nth-child(2):hover a,
+.zero123 .zero_inner2 ul li:nth-child(2) a:focus{
+	background : url(../images/cleanitzero2over.png);
+	transform : translate(0,-5px);
+}
+.zero123 .zero_inner2 ul li:nth-child(3) a{
+	background : url(../images/cleanitzero3.png);
+}
+.zero123 .zero_inner2 ul li:nth-child(3):hover a,
+.zero123 .zero_inner2 ul li:nth-child(3) a:focus{
+	background : url(../images/cleanitzero3over.png);
+	transform : translate(0,-5px);
+}
+.zero123 .zero_inner2 ul li:nth-child(4) a{
+	background : url(../images/cleanitzero4.png);
+}
+.zero123 .zero_inner2 ul li:nth-child(4):hover a,
+.zero123 .zero_inner2 ul li:nth-child(4) a:focus{
+	background : url(../images/cleanitzero4over.png);
+	transform : translate(0,-5px);
+}
+.special {
+	width : 100%; height : 492px; margin-top : 200px; position : relative;
+}
+.special::after {
+	content : ""; display : block; width : 100%; height : 492px; background-color : #b1e4dd; position : absolute; z-index : -1 ;left : -50%; top : 0; margin-left : 34px;
+}
+.special .special_inner {
+	width : 1200px; height : 492px; margin : 0 auto; position : relative;
+}
+.special .special_inner .set {
+	margin-left : -99px;
+}
+.special .special_inner .textarea {
+	text-align : right; position : absolute; top : 0; right : 0;
+}
+.special .special_inner .textarea .sub_title {
+	font-size : 50px; color : #ef7595; font-weight : 100;
+}
+.special .special_inner .textarea .title {
+	font-size : 70px; color : #000; font-weight : 600; margin-top : 15px;
+}
+.special .special_inner .textarea .more {
+	margin-top : 35px; 
+}
+.special .special_inner .textarea .more a {
+	display : block; width : 230px; height : 53px; border : 1px solid #000; font-size : 20px; color : #000; line-height : 53px; text-align : center; float : right; transition : all 0.3s;
+}
+.special .special_inner .textarea .more a i {
+	vertical-align : middle; margin-left : 10px;
+}
+.special .special_inner .textarea .more:hover a,
+.special .special_inner .textarea .more a:focus {
+	font-size : 21px;
+}
+.special .special_inner .textarea .hashtag {
+	float : right; font-size : 25px; color : #7cc5bb; font-weight : 400; margin-top : 60px; clear : both;
+}
+.special .special_inner .textarea .setlink {
+	margin-top : 14px; clear : both; float : right;
+}
+.special .special_inner .textarea .setlink a {
+	display : block; width : 377px; height : 55px; background-color : #0dac96; font-size : 35px; font-weight : 600; color : #fff; text-align : center; line-height : 55px; transition : all 0.3s;
+}
+.special .special_inner .textarea .setlink:hover a,
+.special .special_inner .textarea .setlink a:focus {
+	background-color : #ef7595; 
+}
+.special .special_inner .textarea .price1 {
+	clear : both; font-weight : 100; font-size : 20px; color : #999; text-decoration : line-through; margin-right : 167px; 
+}
+.special .special_inner .textarea .price2 {
+	font-size : 40px; color : #000; font-weight : 600; position : relative;
+}
+.special .special_inner .textarea .price2::after {
+	content : ""; display : block; width : 198px; height : 8px; background-color : #0dac96; position : absolute; z-index : -1; top : 32px; right : 0;
+}
+.bestline {
+	width : 1200px; margin : 0 auto; margin-top : 100px; padding : 0 10px; box-sizing : border-box;
+}
+.bestline .title {
+	font-weight : 700; font-size : 45px; position : relative; color : #313131; transition : color 0.5s;
+}
+.bestline:hover .title{
+	color : #fca2ca;
+}
+.bestline img[alt=linelogo] {
+	margin-top : 30px; margin-left : -10px;
+}
+.bestline .title::after {
+	content : ""; display : block; width : 300px; height : 3px; background-color : #313131; position : absolute; left : -10px; top : 48px;
+}
+.bestline  .product {
+	margin-top : 75px;
+}
+.bestline  .product ul li {
+	float : left; margin-left : 21px;
+}
+.bestline  .product ul li>a {
+	display : block; width : 219px; height : 240px; transition : all 0.3s; 
+}
+.bestline  .product ul li:hover>a,
+.bestline  .product ul li>a:focus {
+	transform : translate(0,-10px);
+}
+.bestline  .product ul li:hover dl dt a,
+.bestline  .product ul li dl dt a:focus {
+	text-decoration : underline;
+}
+.bestline  .product ul li:first-child {
+	margin-left : 0px;
+}
+.bestline  .product ul li dl {
+	margin-top : 78px; display : block; width : 219px;  
+}
+.bestline  .product ul li dl dt {
+	display : inline-block; height : 37px;
+}
+.bestline  .product ul li dl dt a {
+	color : #313131; 
+}
+.bestline  .product ul li dl dt a span {
+	color : #ff2d63;
+}
+.bestline  .product ul li dl dd {
+	margin-top : 37px; display: inline-block; margin-inline-start: 0px; width : 219px; text-align : right;
+}
+.bestline  .product ul li dl dd a {
+	color : #313131; font-size : 20px; font-weight : 600;
+}
+.bestline  .product ul li dl dd a span {
+	color : #999; font-size : 16px; font-weight : 400;
+}
+.bestline  .product ul li dl dd .off {
+	color : #999; text-decoration : line-through; font-size : 14px; margin-right : 5px;
+}
+.bestline .product ul li:hover dl dd a,
+.bestline .product ul li dl dd a:focus {
+	color : #ff2c63;
+}
+.bestline .product ul li>a::after {
+	content : ""; display : block; width : 80px; height : 35px; background : url(../images/cartandlike.png); position : absolute; bottom : -40px; left : 50%; margin-left : -40px; opacity : 0; transition : all 0.5s;
+}
+.bestline .product ul li:hover>a::after,
+.bestline .product ul li>a:focus::after {
+	opacity : 0.9; bottom : -30px;
+}
+.welcome {
+	width : 100%; height : 542px; margin-top : 255px; background-color : #ffe8f2; 
+}
+.welcome .welcome_inner {
+	width : 1200px; height : 542px; margin : 0 auto; position : relative; 
+}
+.welcome .welcome_inner img {
+	position : absolute; top : -190px; 
+}
+.welcome .welcome_inner .join_btn {
+	float : right; margin-right : 226px; margin-top : 462px;
+}
+.welcome .welcome_inner .join_btn a {
+	display : block; width : 238px; border-radius : 50px; background-color : #5a98ff; text-align : center; line-height : 55px; font-size : 20px; color : #fff; transition : all 0.3s;
+}
+.welcome .welcome_inner .join_btn:hover a,
+.welcome .welcome_inner .join_btn a:focus {
+	background-color : #fff; color : #000;
+}
+.insta {
+	width : 1200px; height : 682px; margin : 0 auto; margin-top : 130px;
+}
+.insta span {
+	font-size : 40px; font-weight : 600;
+}
+.insta .pic {
+	margin-top : 40px; float : left; 
+}
+.insta .pic .pic_block1 {
+	float : left;
+}
+.insta .pic .pic_block1 a {
+	position : relative;
+}
+.insta .pic .pic_block1 a::after {
+	content : ""; display : block; width : 600px; height : 600px; background-color : #000; opacity : 0.0; position : absolute; top : 4px; left : 0; transition : opacity 0.3s;
+}
+.insta .pic .pic_block1 a:hover::after,
+.insta .pic .pic_block1 a:focus::after {
+	opacity : 0.2;
+}
+.insta .pic .pic_block2 {
+	width : 600px; height : 600px; font-size : 0; float : right; 
+}
+.insta .pic .pic_block2 a {
+	position : relative;
+}
+.insta .pic .pic_block2 a::after {
+	content : ""; display : block; width : 300px; height : 300px; background-color : #000; opacity : 0.0; position : absolute; top : 0; left : 0; transition : opacity 0.3s;
+}
+.insta .pic .pic_block2 a:hover::after,
+.insta .pic .pic_block2 a:focus::after {
+	opacity : 0.2;
+}
